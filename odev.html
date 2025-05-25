@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mıknatısların Büyülü Dünyası</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #4b0082;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      animation: fadeDown 1s ease;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      animation: fadeIn 1s ease;
+    }
+    .intro, .did-you-know, .video-section, .idea-section {
+      background-color: white;
+      padding: 25px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      animation: fadeUp 1s ease;
+    }
+    .did-you-know {
+      background-color: #e6f7ff;
+      border-left: 5px solid #4b0082;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+      margin: 30px 0;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .applications {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .app-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      animation: fadeUp 1s ease;
+    }
+    .app-card:hover {
+      transform: translateY(-5px);
+    }
+    textarea {
+      width: 100%;
+      padding: 15px;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 16px;
+      min-height: 100px;
+      resize: vertical;
+    }
+    button {
+      background-color: #4b0082;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #5a1a9a;
+    }
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 20px;
+      color: #666;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .video-container {
+        padding-bottom: 60%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🧲 Mıknatısların Büyülü Dünyası</h1>
+    <p>Geleceğin teknolojilerini keşfedin!</p>
+  </header>
+
+  <div class="container">
+
+    <section class="intro">
+      <h2>👋 Merhaba Arkadaşlar!</h2>
+      <p>Bugün size mıknatıslarla ilgili ilginç bilgiler anlatacağım ve sonunda sizden yaratıcı fikirler isteyeceğim!</p>
+    </section>
+
+    <section class="did-you-know">
+      <h2>📌 Bunu Biliyor Muydunuz?</h2>
+      <p>Eskiden insanlar yönlerini bulmak için posta güvercinlerini kullanırmış. Bu güvercinler, dünyanın manyetik alanını hissederek yollarını bulabiliyorlardı.</p>
+    </section>
+
+    <section class="video-section">
+      <h2>🎬 İlham Verici Bir Video</h2>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/IUN7F4DKqRU" 
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <p>İşte bu özellikten ilham alan insanlar pusulayı icat etti. Günümüzdeyse telefonlarımızda konum bulma, arabalarımızda navigasyon gibi sistemler hep mıknatısın bu özelliği sayesinde çalışıyor.</p>
+    </section>
+
+    <section>
+      <h2>✨ Ama Sadece Bu Kadarla Kalmıyor!</h2>
+      <p>Mıknatısın itme ve çekme özelliği sayesinde günümüzde pek çok teknoloji geliştirildi:</p>
+
+      <div class="applications">
+        <div class="app-card">
+          <h3>🚄 Manyetik Trenler</h3>
+          <p>Raylara dokunmadan hızla giden sürtünmesiz ulaşım sistemleri.</p>
+        </div>
+        <div class="app-card">
+          <h3>🧊 Buzdolapları</h3>
+          <p>Kapakları kendi kendine kapanan manyetik sistemler.</p>
+        </div>
+        <div class="app-card">
+          <h3>🔊 Hoparlörler</h3>
+          <p>Ses üretmek için mıknatıs ve bobin etkileşimini kullanan cihazlar.</p>
+        </div>
+        <div class="app-card">
+          <h3>🧸 Manyetik Oyuncaklar</h3>
+          <p>Yaratıcı yapılar kurmayı sağlayan manyetik parçalar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="idea-section">
+      <h2>💡 Haydi Fikir Üretelim!</h2>
+      <p>Peki sizce, biz günümüzdeki teknolojilerden yola çıkarak gelecekte daha başka hangi icatlar geliştirilebilir? Mıknatısla çalışan ne gibi yeni aletler hayal edebiliriz?</p>
+      <p>Haydi aklınıza gelen fikirleri benimle paylaşın, ne kadar sıra dışı olursa o kadar güzel!</p>
+
+      <textarea placeholder="Mıknatıslı gelecek fikrinizi buraya yazın..."></textarea>
+      <button>Fikrimi Gönder</button>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Mıknatıslı Dünya | Tüm Hakları Saklıdır</p>
+  </footer>
+
+  <script>
+    document.querySelector('button').addEventListener('click', function () {
+      const idea = document.querySelector('textarea').value;
+      if (idea.trim() !== '') {
+        alert('Fikriniz için teşekkür ederiz! 🚀 Yaratıcı düşünceleriniz geleceğin teknolojilerini şekillendirebilir.');
+        document.querySelector('textarea').value = '';
+      } else {
+        alert('Lütfen bir fikir yazın! ✍️');
+      }
+    });
+  </script>
+</body>
+</html>
